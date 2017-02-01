@@ -1,0 +1,55 @@
+
+
+<hr/>
+<hr/>
+
+<h1>Edit Student</h1>
+
+
+<form action="/welcome/index/<%= @student.id%>" method="post">
+  <p>
+    <label>
+      First name:
+      <input type="text" name="first_name" value = "<%= @student.first_name %>"/>
+    </label>
+  </p>
+  <p>
+    <label>
+      Last name:
+      <input type="text" name="second_name" value="<%= @student.second_name %>"/>
+    </label>
+  </p>
+  <p>
+    <label>
+      House:
+      <select name ="house">
+        <option value="Gryffindor">Gryffindor</option>
+        <option value="Hufflepuff">Hufflepuff</option>
+        <option value="Ravenclaw">Ravenclaw</option>
+        <option value="Slytherin">Slytherin</option>
+      </select>
+    </label>
+  </p>
+  <p>  
+    </label>
+      Age:
+      <input type="number" name="age" value="<%= @student.age %>"/>
+    </label>
+    </p>
+    <p>
+    <label>
+      Image URL:
+      <input type="text" name="image_url" value="<%= @student.image_url %>"/>
+    </label>
+    </p>
+    <p>
+    <label>
+      House ID:
+      <input type="text" name="house_id" value="<%= @student.house_id %>"/>
+    </label>
+    </p>
+    <input type="submit" value="Update" />
+  </p>
+</form>
+
+

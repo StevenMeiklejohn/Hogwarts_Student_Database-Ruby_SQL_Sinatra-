@@ -1,0 +1,19 @@
+
+<hr/>
+<hr/>
+<h1>Student</h1>
+<div id="student_info">
+  <p>First Name: <%= @student.first_name %></p>
+  <p>Surname: <%= @student.second_name %></p>
+  <p>House: <%= @student.house %></p>
+  <p>Age: <%= @student.age %></p>
+  <a href="/welcome/index/<%= @student.id %>/edit" class="glow">Edit</a>
+  <form action="/welcome/index/<%= @student.id %>/delete" method="post" >
+    <input type="submit" value="delete">
+  </form>
+</div>
+
+<p></p>
+<p></p>
+<p></p>
+<img id="student_image"; src="<%= @student.image_url %>">  

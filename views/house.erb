@@ -1,0 +1,22 @@
+
+<body id="<%= @house.name %>">
+
+<h1><%= @house.name %></h1>
+
+<div id="student_info">
+  <p><% for student in @students %></p>
+  <p>First Name: <%= student.first_name %></p>
+  <p>Surname: <%= student.second_name %></p>
+  <p>House: <%= student.house %></p>
+  <p>Age: <%= student.age %></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <img id="student_image"; src="<%= student.image_url %>"> 
+  <p><% end %></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  </div>
+
+ 
